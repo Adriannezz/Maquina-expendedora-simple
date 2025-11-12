@@ -13,12 +13,25 @@ public class MaquinaExpendedoraSimple {
 
     /**
      * Crea una maquina expendedora de billetes de tren con valores fijos:
-     * Precio = 20 euros, origen = "León", destino = "Madrid".
+     * Precio = 20 euros, origen = "León", destino = "Benavente".
      */
     public MaquinaExpendedoraSimple() {
         precioBillete = 20;            // Precio fijo
         estacionOrigen = "León";       // Origen fijo
-        estacionDestino = "Benavente";    // Destino fijo (puedes elegir otra ciudad)
+        estacionDestino = "Benavente"; // Destino fijo
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+    }
+
+    /**
+     * Segundo constructor:
+     * Permite crear una máquina con un precio y destino personalizados.
+     * El origen será siempre "León" y el resto de valores iniciales son 0.
+     */
+    public MaquinaExpendedoraSimple(int precio, String destino) {
+        precioBillete = precio;
+        estacionOrigen = "León";
+        estacionDestino = destino;
         balanceClienteActual = 0;
         totalDineroAcumulado = 0;
     }
@@ -35,6 +48,20 @@ public class MaquinaExpendedoraSimple {
      */
     public int getBalanceClienteActual() {
         return balanceClienteActual;
+    }
+
+    /**
+     * Devuelve el origen del billete
+     */
+    public String getEstacionOrigen() {
+        return estacionOrigen;
+    }
+
+    /**
+     * Devuelve el destino del billete
+     */
+    public String getEstacionDestino() {
+        return estacionDestino;
     }
 
     /**
@@ -62,3 +89,4 @@ public class MaquinaExpendedoraSimple {
         balanceClienteActual = 0;
     }
 }
+
