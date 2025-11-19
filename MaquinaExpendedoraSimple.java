@@ -10,6 +10,11 @@ public class MaquinaExpendedoraSimple {
     private String estacionOrigen;
     // El destino del billete
     private String estacionDestino;
+    
+    public int getTotalDineroAcumulado() {
+    return totalDineroAcumulado;
+     }
+
 
     /**
      * Crea una maquina expendedora de billetes de tren con valores fijos:
