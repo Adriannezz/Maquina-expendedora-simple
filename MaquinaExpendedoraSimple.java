@@ -12,7 +12,7 @@ public class MaquinaExpendedoraSimple {
     private String estacionDestino;
     
     public void setPrecioBillete(int nuevoPrecio) {
-    this.precioBillete = nuevoPrecio;
+    precioBillete = nuevoPrecio;
     }   
     
     public int getTotalDineroAcumulado() {
