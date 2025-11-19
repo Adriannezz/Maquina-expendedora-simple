@@ -11,6 +11,10 @@ public class MaquinaExpendedoraSimple {
     // El destino del billete
     private String estacionDestino;
     
+    public void setPrecioBillete(int nuevoPrecio) {
+    this.precioBillete = nuevoPrecio;
+    }   
+    
     public int getTotalDineroAcumulado() {
     return totalDineroAcumulado;
      }
