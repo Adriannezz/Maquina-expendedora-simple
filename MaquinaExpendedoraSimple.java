@@ -11,6 +11,14 @@ public class MaquinaExpendedoraSimple {
     // El destino del billete
     private String estacionDestino;
     
+    public void vaciarDepositoDinero()
+{
+    // Suponemos que no devuelve nada.
+    // Solo deja el acumulado a 0.
+    totalDineroAcumulado = 0;
+    }
+
+    
     public void reducirPrecioBillete(int cantidad) {
     precioBillete = precioBillete - cantidad;
     }
