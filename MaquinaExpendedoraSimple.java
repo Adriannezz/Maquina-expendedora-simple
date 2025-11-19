@@ -11,6 +11,11 @@ public class MaquinaExpendedoraSimple {
     // El destino del billete
     private String estacionDestino;
     
+    public void reducirPrecioBillete(int cantidad) {
+    precioBillete = precioBillete - cantidad;
+    }
+
+    
     public void setPrecioBillete(int nuevoPrecio) {
     precioBillete = nuevoPrecio;
     }   
